@@ -43,9 +43,8 @@
 				images[el.id][i] 		= $(item).attr('src');
 				links[el.id][i] 		= $(item).parent().is('a') ? $(item).parent().attr('href') : '';
 				linksTarget[el.id][i] 	= $(item).parent().is('a') ? $(item).parent().attr('target') : '';
-				titles[el.id][i] 		= $(item).next().is('span') ? $(item).next().html() : '';
+				titles[el.id][i] 		= $(item).next().is('span') ? $(item).next() : '';
 				$(item).hide();
-				$(item).next().hide();
 			});			
 			
 
